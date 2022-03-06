@@ -1,0 +1,10 @@
+apiVersion: alterationx10.com/v1
+kind: Database
+metadata:
+  name: databases
+spec:
+  databases:
+    - dev
+    - test
+    - marks
+
