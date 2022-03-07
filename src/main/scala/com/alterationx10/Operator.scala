@@ -11,7 +11,7 @@ object Operator extends App {
 
   val simpleProgram: ZIO[Has[SQLService], Nothing, Unit] =
     SQLService(_.createDatabaseWithRole("altx11"))
-      .as(())
+      .unit
       .catchAll(_ => ZIO.unit)
 
   val operatorProgram: ZIO[Has[
