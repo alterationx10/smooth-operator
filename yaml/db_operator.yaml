@@ -47,7 +47,7 @@ spec:
       serviceAccountName: db-operator-service-account
       containers:
         - name: db-operator
-          image: smooth-operator:0.0.2
+          image: smooth-operator:0.0.3
           env:
             - name: PG_CONN_URL
               value: "jdbc:postgresql://postgres:5432/?user=postgres&password=password"

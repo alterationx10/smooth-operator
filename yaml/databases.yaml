@@ -4,7 +4,7 @@ metadata:
   name: databases
 spec:
   databases:
-    - dev
-    - test
-    - marks
+    - mark
+    - joanie
+    - oliver
 
