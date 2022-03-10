@@ -4,6 +4,7 @@ lazy val root = project
     scalaVersion := "2.13.8",
     organization := "com.alterationx10",
     name         := "smooth-operator",
+    version      := "0.0.1",
     libraryDependencies ++= Seq(
       "com.coralogix"                 %% "zio-k8s-operator"       % "1.4.3",
       "com.coralogix"                 %% "zio-k8s-client"         % "1.4.3",
@@ -15,7 +16,6 @@ lazy val root = project
     dockerBaseImage := "openjdk:17.0.2-slim-buster"
   )
   .enablePlugins(JavaServerAppPackaging)
-
 
 externalCustomResourceDefinitions := Seq(
   file("crds/databases.yaml")
