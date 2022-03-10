@@ -4,7 +4,7 @@ lazy val root = project
     scalaVersion := "2.13.8",
     organization := "com.alterationx10",
     name         := "smooth-operator",
-    version      := "0.0.1",
+    version      := "0.0.2",
     libraryDependencies ++= Seq(
       "com.coralogix"                 %% "zio-k8s-operator"       % "1.4.3",
       "com.coralogix"                 %% "zio-k8s-client"         % "1.4.3",
